@@ -73,9 +73,9 @@
     <el-table ref="table" v-loading="crud.loading" :data="crud.data" style="width: 100%;" @selection-change="crud.selectionChangeHandler">
       <el-table-column :selectable="checkboxT" type="selection" width="55" />
       <el-table-column :show-overflow-tooltip="true" prop="id" label="任务ID" />
-      <el-table-column :show-overflow-tooltip="true" prop="jobName" label="任务名称" />
-      <el-table-column :show-overflow-tooltip="true" prop="beanName" label="Bean名称" />
-      <el-table-column :show-overflow-tooltip="true" prop="methodName" label="执行方法" />
+      <el-table-column :show-overflow-tooltip="true" prop="jobName" label="任务名称" width="200" align="center" />
+      <el-table-column :show-overflow-tooltip="true" prop="beanName" label="Bean名称" width="150" align="center" />
+      <el-table-column :show-overflow-tooltip="true" prop="methodName" label="执行方法" width="150" align="center" />
       <el-table-column :show-overflow-tooltip="true" prop="params" label="参数" />
       <el-table-column :show-overflow-tooltip="true" prop="cronExpression" label="cron表达式" />
       <el-table-column :show-overflow-tooltip="true" prop="isPause" width="90px" label="状态">
